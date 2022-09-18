@@ -1,0 +1,15 @@
+@import './vendor/fonts/fonts';
+@import './constants/contants';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: $milky-way;
+  box-sizing: border-box;
+}
+
+.link {
+  text-decoration: none;
+}

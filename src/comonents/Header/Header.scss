@@ -1,0 +1,44 @@
+@import '../../constants/contants';
+
+.header {
+  height: 74px;
+  background-color: $midnight;
+
+  @media screen and (max-width: 800px) {
+    height: 64px;
+  }
+
+  &__wrapper {
+    margin: auto;
+    padding: 0 20px;
+    height: 100%;
+    max-width: $max-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 10px;
+    width: 40px;
+
+    @media screen and (max-width: 800px) {
+      width: 32px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    transition: color .2s linear;
+
+    @media screen and (max-width: 800px) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      color: $tangerine
+    }
+  }
+}
