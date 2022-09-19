@@ -4,7 +4,7 @@
   height: 74px;
   background-color: $midnight;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: $medium-width) {
     height: 64px;
   }
 
@@ -16,24 +16,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: $small-width) {
+      padding: 0 10px;
+    }
   }
 
   &__logo {
     margin-right: 10px;
     width: 40px;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: $medium-width) {
       width: 32px;
     }
   }
 
   &__link {
     display: flex;
-    font-size: 22px;
+    font-size: 20px;
     align-items: center;
     transition: color .2s linear;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: $medium-width) {
       font-size: 18px;
     }
 

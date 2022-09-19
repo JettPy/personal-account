@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import './App.scss';
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <Header loggedIn={isLoggedIn}/>
       <button onClick={() => {setIsLoggedIn(!isLoggedIn)}}>Дебаг</button>
+      <Footer />
     </>
   );
 }
